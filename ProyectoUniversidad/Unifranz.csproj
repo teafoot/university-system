@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63D65E9C-5D21-45C1-8D9C-2AE810BE62EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>libreria</RootNamespace>
+    <AssemblyName>libreria</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Administrador.cs" />
+    <Compile Include="Clases\Carrera.cs" />
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Estudiante.cs" />
+    <Compile Include="Clases\Gestion.cs" />
+    <Compile Include="Clases\Metodos\MetodoCarrera.cs" />
+    <Compile Include="Clases\Metodos\MetodoGestion.cs" />
+    <Compile Include="Clases\Metodos\MetodoPago.cs" />
+    <Compile Include="Clases\Metodos\MetodoSede.cs" />
+    <Compile Include="Clases\Metodos\MetodosEstudiante.cs" />
+    <Compile Include="Clases\Metodos\MetodoSexo.cs" />
+    <Compile Include="Clases\Metodos\MetodosUniversidad.cs" />
+    <Compile Include="Clases\Pago.cs" />
+    <Compile Include="Clases\Sede.cs" />
+    <Compile Include="Clases\Sexo.cs" />
+    <Compile Include="Formularios\FrmPostAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPostAdmin.Designer.cs">
+      <DependentUpon>FrmPostAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Formularios\FrmPostEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPostEstudiante.Designer.cs">
+      <DependentUpon>FrmPostEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Materia.cs" />
+    <Compile Include="Clases\Metodos\MetodoMateria.cs" />
+    <Compile Include="Clases\Metodos\MetodoNota.cs" />
+    <Compile Include="Clases\Metodos\MetodoSemestre.cs" />
+    <Compile Include="Clases\Nota.cs" />
+    <Compile Include="Clases\Semestre.cs" />
+    <Compile Include="Formularios\FrmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmBienvenida.Designer.cs">
+      <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Metodos\MetodoAutenticar.cs" />
+    <Compile Include="Formularios\FrmPreAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPreAdmin.Designer.cs">
+      <DependentUpon>FrmPreAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPreEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPreEstudiante.Designer.cs">
+      <DependentUpon>FrmPreEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Metodos\MetodoAdministrador.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Clases\Universidad.cs" />
+    <EmbeddedResource Include="Formularios\FrmPostAdmin.resx">
+      <DependentUpon>FrmPostAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPostEstudiante.resx">
+      <DependentUpon>FrmPostEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmBienvenida.resx">
+      <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPreAdmin.resx">
+      <DependentUpon>FrmPreAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPreEstudiante.resx">
+      <DependentUpon>FrmPreEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNIFRANZ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-friends.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datos estudiantil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\materias.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

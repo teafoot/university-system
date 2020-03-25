@@ -14,6 +14,7 @@
 - Admin Panel
 ![](images/1a.jpg)
 ![](images/1b.png)
+![](images/1c.png)
 
 - Student Panel
 ![](images/2a.png)

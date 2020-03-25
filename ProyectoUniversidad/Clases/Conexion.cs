@@ -11,7 +11,7 @@ namespace libreria
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection Connection = new SqlConnection("Data Source=LAPTOP-FS0I3MUM;Initial Catalog=unifranz;Integrated Security=True");
+            SqlConnection Connection = new SqlConnection("Data Source=coconut;Initial Catalog=unifranz;Integrated Security=True");
             Connection.Open();
             return Connection;
         }
